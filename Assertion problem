@@ -1,0 +1,2 @@
+assert "python" in "python programming"
+print("validation passed")
