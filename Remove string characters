@@ -1,0 +1,15 @@
+Problem:you are given two strings A and B. your task is to find and return a string representing the leftover string in A after removing all the letters that exists in B.return "EMPTY" if the output does not contain any value.
+sloution:
+     def leftover(a,b):
+    left=" "
+    remove=set(b)
+    for ch in a:
+        if ch not in remove:
+            left+=ch
+    if left:
+        print(left)
+    else:
+        print("empty")
+a="abcdef"
+b="bde"
+leftover(a,b)
