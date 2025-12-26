@@ -1,0 +1,14 @@
+problem:
+     You are given an array A of size N,where each element represents the number of cupcakes solid in a single transaction.your task is to find and return an integer value. 
+representing the sum o0f the cupcakes from the transactions where 5 or more cupcakes were sold.return '0' if there is no transaction will more than 5 cupcakes sold.
+
+solution:
+    def cupcakes(n,arr):
+    sum=0
+    for i in range(n):
+       if arr[i]>=5:
+           sum+=arr[i]
+    print(sum)
+n=5
+arr=[1,2,5,8,3,7]
+cupcakes(n,arr)
